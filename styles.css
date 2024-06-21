@@ -12,15 +12,21 @@ nav {
 }
 .navbar__container {
   background-color: rgb(244, 131, 131);
+  display: flex;
+
+  justify-content: flex-end;
 }
 
 .title__container {
   background-color: rgb(85, 85, 219);
-  font-size: 40px;
   
+  font-size: 40px;
+  flex-grow: 1;
 }
-.title__button {
-  background-color: rgb(198, 214, 99);
-  width: 100%;
-  align-items: center;
+
+.navbar__menu {
+  background-color: rgb(106, 230, 127);
+  display: flex;
+  align-self: center;
 }
+
