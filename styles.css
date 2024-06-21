@@ -1,0 +1,26 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+nav {
+  background-color: rgb(126, 124, 124);
+}
+.navbar__container {
+  background-color: rgb(244, 131, 131);
+}
+
+.title__container {
+  background-color: rgb(85, 85, 219);
+  font-size: 40px;
+  
+}
+.title__button {
+  background-color: rgb(198, 214, 99);
+  width: 100%;
+  align-items: center;
+}
