@@ -1,23 +1,46 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <link rel="stylesheet" href="/Website__2/styles.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Florence Aura</title>
   </head>
   <body>
     <nav>
-      <div class="navbar__container">
-        <div class="title__container">
-          <a href="/index.html" class="title__button">Florence Aura</a>
-        </div>
-        <div class="navbar__menu">
-          <li class="navbar__container--item">CART</li>
-          <li class="navbar__container--item">SIZE</li>
-          <li class="navbar__container--item">Sign In</li>
+      <div class="menu__bar">
+        <div class="menu__items">
+          <button>MENU</button>
+          <button>CART</button>
+          <button>SIGN IN</button>
         </div>
       </div>
     </nav>
+    <div class="site__title">Florence Aura</div>
+    <div class="search">
+      <form class="form-wrapper-2 cf">
+        <input type="text" placeholder="Search..." required />
+        <!-- <button type="submit">Search</button> -->
+      </form>
+    </div>
+    <div class="animation">
+      <div id="image__track" data-mouse-down-at="0" data-prev-percentage="0">
+        <img class="image" src="dress1.jpg" draggable="false" />
+        <img class="image" src="dress2.jpg" draggable="false" />
+        <img class="image" src="dress3.jpg" draggable="false" />
+        <img class="image" src="dress4.jpg" draggable="false" />
+        <img class="image" src="dress5.jpg" draggable="false" />
+        <img class="image" src="dress6.jpg" draggable="false" />
+        <img class="image" src="dress7.jpg" draggable="false" />
+      </div>
+    </div>
+    <script src="app.js" > </script>
   </body>
 </html>
