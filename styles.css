@@ -20,15 +20,37 @@
 
 .menu__items {
   display: flex;
-  justify-content: space-evenly;
-  margin-top: 10px;
-  margin-right: 15px;
+  gap:0px;
+  margin-top: 5px;
+  margin-right: 35px;
+  margin-bottom: 0px;
 }
+
+#menu__bar--button{
+  margin-top: 4px;
+  margin-bottom: 0px;
+  border-style: solid;
+  border-color: white;
+  border-radius:10px;
+  z-index:3;
+  border-width:0.2em;
+  padding:6px;
+}
+
+#menu__bar--button:hover{
+
+  border-color: black;
+  border-radius:10px;
+  z-index:4;
+  border-width:0.2em;
+  padding:6px;
+}
+
 button {
-  font-family: Nevis-Bond;
+  font-family: Nevis-Bond,Arial, Helvetica, sans-serif;
   background-color: white;
   border: none;
-  margin: 0px 10px;
+  margin: 0px 2px;
   font-size: 1rem;
   cursor: pointer;
 }
@@ -36,9 +58,10 @@ button {
 .site__title {
   display: flex;
 
+  margin-top:0px;
   justify-content: center;
   font-family: 'Lexend Deca', sans-serif;
-  font-size: 2.2rem;
+  font-size: 3.5rem;
   background: linear-gradient(
     to left,
     rgb(235, 24, 59) 30%,
@@ -56,27 +79,15 @@ input {
 }
 
 .animation {
+
   height: 700px;
   width: 100%;
-  background-color: black;
+  background: linear-gradient(to top, rgb(41, 43, 42) 0%, rgb(23, 23, 23) 45%,  rgb(0, 0, 0) 70%);
   margin: 0;
   display: flex;
   align-items: center;
 }
 
-#image__track > .image {
-  width: 40vmin;
-  height: 56vmin;
-  object-fit: cover;
-  object-position: center;
-  user-select: none;
-    -webkit-user-drag: none;
-  -khtml-user-drag: none;
-  -moz-user-drag: none;
-  -o-user-drag: none;
-  user-select: none;
-
-}
 
 #image__track {
 
@@ -84,11 +95,45 @@ input {
   position: absolute;
   gap: 4vmin;
   left: 50%;
-  transform: translate(-100%,0%);
+  transform: translate(0%,0%);
 
 }
 
 body{
-  overflow-x: hidden;
+  overflow: hidden;
+  user-select: none;
 }
+
+#image__track > .image{
+  width: 40vmin;
+  height: 56vmin;
+  object-fit: cover;
+  object-position: 50% 50%;
+
+  }
+
+  .search{
+    margin-bottom: 5px;
+  }
+
+  #search__bar{
+  height : 40px;
+    width: 250px;
+    padding-left: 20px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgb(51,51,51);
+    color: black;
+    font-family: Nevis-Bond;
+    font-weight: bold;
+    background-image: url("search.png");
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    background-position: 200px 3px;
+
+  }
+
+   #search__bar:not(:placeholder-shown){
+      background-image: none;
+    }
 
